@@ -1,9 +1,11 @@
-#page-auth {
+import styled from 'styled-components';
+
+export const PageAuth = styled.div `
     display: flex;
     align-items: stretch;
     height: 100vh;
-
-    aside {
+`;
+export const Aside = styled.aside `
         flex: 7;
 
         background-color: #835afd;
@@ -31,29 +33,37 @@
             margin-top: 16px;
             color: #f8f8f8;
         }
-    }
+    `;
 
-    main {
+ export const Main = styled.main `
         flex: 8;
 
         padding: 0 32px;
 
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
+        justify-content: space-around;
 
-    .main-content {
+        
+        .SwitchContainer {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            
+        }
+    `
+
+export const  MainContent = styled.div ` 
         display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 320px;
         align-items: stretch;
         text-align: center;
+        margin-bottom: 20%;
 
-        > img {
-            align-self: center;
-        }
+
 
         h2 {
             font-size: 24px;
@@ -66,8 +76,9 @@
                 height: 50px;
                 border-radius: 8px;
                 padding: 0 16px;
-                background-color: #fff;
+                background-color: ${props => props.theme.colors.background};
                 border: 1px solid #a8a8b3;
+                color: ${props => props.theme.colors.text};
             }
 
             button {
@@ -88,9 +99,9 @@
                 color: #e559f9;
             }
         }
-    }
+    `
     
-    .create-room {
+export const CreateRoomButton = styled.button `
         margin-top: 64px;
         height: 50px;
         border-radius: 8px;
@@ -114,9 +125,9 @@
         &:hover {
             filter: brightness(0.9);
         }
-    }
+    `
 
-    .separator {
+export const Separator = styled.div `
         font-size: 14px;
         color: #a8a8b3;
 
@@ -139,5 +150,4 @@
             background-color: #a8a8b3;
             margin-left: 16px;
         }
-    }
-}
+    `;
