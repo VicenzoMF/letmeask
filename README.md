@@ -53,7 +53,7 @@ Lembrando que será necessário criar uma conta no [Firebase](https://firebase.g
 
 Caso queria entrar no painel do administrador da sala, basta adicionar /admmin antes do /room, exemplo:
 
-https://letmeask-a8839.web.app/admin/room/codigodasala
+letmeask-a8839.web.app/admin/room/codigodasala
 
 
 ## 💻 Projeto
