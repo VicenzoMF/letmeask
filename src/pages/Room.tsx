@@ -1,16 +1,17 @@
 import { useParams } from "react-router-dom";
 
-import logoImg from "../assets/images/logo.svg";
 
 import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 
-import "../styles/room.scss";
 import { FormEvent, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
 import { Question } from "../components/Question";
-import { useRoom } from "../hooks/useRoom";
+import { useRoom } from "../hooks/useRoom"; 
+import { PageRoom } from "../styles/room";
+import { Logo } from "../components/Logo";
+import { SwitchTheme } from "../components/SwitchTheme";
 
 type RoomParams = {
   id: string;
@@ -70,11 +71,14 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <PageRoom>
       <header>
         <div className="content">
-          <img src={logoImg} alt="LetMeAsk" />
+          <Logo className="logo"/>
+          <div className="switch-container">
           <RoomCode code={roomId} />
+          <SwitchTheme />
+          </div>
         </div>
       </header>
 
@@ -152,6 +156,6 @@ export function Room() {
           })}
         </div>
       </main>
-    </div>
+    </PageRoom>
   );
 }

@@ -8,24 +8,24 @@ import answerImg from "../assets/images/answer.svg";
 import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 
-import "../styles/room.scss";
-// import { useState } from 'react';
-// import { useAuth } from '../hooks/useAuth';
-// import { database } from '../services/firebase';
+
 import { Question } from "../components/Question";
 import { useRoom } from "../hooks/useRoom";
 import { database } from "../services/firebase";
+import { PageRoom } from "../styles/room";
+import { Logo } from "../components/Logo";
+import { SwitchTheme } from "../components/SwitchTheme";
 
 type RoomParams = {
   id: string;
 };
 
 export function AdminRoom() {
-  // const  { user } = useAuth();
+
   const params = useParams<RoomParams>();
   const roomId = params.id;
   const navigate = useNavigate();
-  // const [newQuestion, setNewQuestion] = useState('');
+
 
   if (!roomId) {
     throw new Error("Missing room ID");
@@ -60,15 +60,18 @@ export function AdminRoom() {
   }
 
   return (
-    <div id="page-room">
+    <PageRoom>
       <header>
         <div className="content">
-          <img src={logoImg} alt="LetMeAsk" />
+          <Logo className="logo" />
           <div>
             <RoomCode code={roomId} />
             <Button isOutlined onClick={handleEndRoom}>
               Encerrar sala
             </Button>
+            <div className="switch-container">
+            <SwitchTheme/>
+            </div>
           </div>
         </div>
       </header>
@@ -119,6 +122,6 @@ export function AdminRoom() {
           })}
         </div>
       </main>
-    </div>
+    </PageRoom>
   );
 }
