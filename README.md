@@ -47,6 +47,15 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
 
+
+---
+
+
+Caso queria entrar no painel do administrador da sala, basta adicionar /admmin antes do /room, exemplo:
+
+https://letmeask-a8839.web.app/admin/room/codigodasala
+
+
 ## 💻 Projeto
 
 Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
