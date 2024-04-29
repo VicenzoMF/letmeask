@@ -4,73 +4,73 @@
 
 <br>
 
-Caso queria visualizar o app [Clique Aqui](https://letmeask-a8839.web.app/)
+If you want to view the app [Click Here](https://letmeask-a8839.web.app/)
 
-## 🧪 Tecnologias
+## 🧪 Technologies
 
-Esse projeto foi desenvolvido originalmente com as seguintes tecnologias:
+This project was originally developed with the following technologies:
 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-Tecnologias adicionadas:
+Added technologies:
 
 - [Styled-Components](https://styled-components.com/)
 - [Polished](https://github.com/styled-components/polished)
 - [React-Switch](https://github.com/markusenglund/react-switch#readme)
 
-Mudanças e features adicionadas:
+Changes and added features:
 
-- Atualização dos estilos para Styled-Components
-- Modo de tema Light/Dark
+- Style update to Styled-Components
+- Light/Dark theme mode
 
 
-## 🚀 Como executar
+## 🚀 How to run
 
-Clone o projeto e acesse a pasta do mesmo.
+Clone the project and access its folder.
 
 ```bash
 $ git clone https://github.com/rocketseat-education/nlw-06-reactjs
 $ cd nlw-06-reactjs
 ```
 
-Para iniciá-lo, siga os passos abaixo:
+To start it, follow the steps below:
 ```bash
-# Instalar as dependências
-$ yarn
+# Install dependencies
+$ npm install
 
-# Iniciar o projeto
-$ yarn start
+# Start the project
+$ npm run start
 ```
-O app estará disponível no seu browser pelo endereço http://localhost:3000.
+The app will be available in your browser at http://localhost:3000.
 
-Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
+Remember that you will need to create an account on [Firebase](https://firebase.google.com/) and a project to make a Realtime Database available.
 
 
 ---
 
 
-Caso queria entrar no painel do administrador da sala, basta adicionar /admmin antes do /room, exemplo:
+If you want to enter the room administrator panel, just add /admin before /room, example:
 
-letmeask-a8839.web.app/admin/room/codigodasala
+letmeask-a8839.web.app/admin/room/roomcode
 
 
-## 💻 Projeto
+## 💻 Project
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+Letmeask is perfect for content creators to create Q&A rooms with their audience in a very organized and democratic way.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
+This is a project developed during the **[Next Level Week Together](https://nextlevelweek.com/)**, presented from June 20th to 27th, 2021.
 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através do link abaixo:
+You can view the project Figma through the link below:
 
 - [Layout Web](https://www.figma.com/community/file/1009824839797878169/Letmeask) 
 
-Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
+Remember that you need to have an account on [Figma](http://figma.com/).
 
 ## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
